@@ -16,14 +16,14 @@ public class PersonManagerArrayList {
 		PersonManagerArrayList mgr = new PersonManagerArrayList();		
 		mgr.fillPersons(personList2);
 		
-		mgr.showPersons(persons);
+		mgr.showPersons(personList2);
 		
-		System.out.println(mgr.findByGender(persons, '남'));
+		System.out.println(mgr.findByGender(personList2, '남'));
 		
-		mgr.showPerson(persons, "김하늘");
+		mgr.showPerson(personList2, "김하늘");
 	}
 
-	public void showPersons(PersonEntity[] persons) {
+	public void showPersons(List<PersonEntity> persons) {
 		//Enhanced for Loop
 		for (PersonEntity person : persons) {
 			System.out.println(person.getName() + "\t" + person.getGender() + "\t" + person.getPhone());
@@ -46,11 +46,7 @@ public class PersonManagerArrayList {
 	}
 	
 	
-	public int findByGender(PersonEntity[] persons, char gender) {
-//		for (int i = 0; i < persons.length; i++) {
-//			
-//		}
-		
+	public int findByGender(List<PersonEntity> persons, char gender) {		
 		int genderCnt = 0;
 		for (PersonEntity person : persons) {
 			//char 타입은 primitive 타입으로 값을 비교할때 == 연산자를 사용해도 됨
@@ -61,7 +57,7 @@ public class PersonManagerArrayList {
 		return genderCnt;
 	}
 	
-	public void showPerson(PersonEntity[] persons, String name) {
+	public void showPerson(List<PersonEntity> persons, String name) {
 		for (PersonEntity person : persons) {
 			//String은 reference 타입이므로 값을 비교할때 equals() 메서드를 사용해야 함
 			if(person.getName().equals(name)) {

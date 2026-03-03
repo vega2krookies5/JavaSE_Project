@@ -33,7 +33,7 @@ public class AccountTest {
 			//ภÜพืบฮมท
 			account2.withdraw(10000);
 		}catch(InsufficientBalanceException e) {
-			
+			System.out.println(e.getMessage() + e.getCurrentBalance());
 		}
 		
 	}

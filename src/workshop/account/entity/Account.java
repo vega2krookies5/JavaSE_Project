@@ -1,5 +1,10 @@
 package workshop.account.entity;
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 public class Account extends Object {
 	private String custId;
 	private String acctId;
@@ -56,7 +61,12 @@ public class Account extends Object {
 		this.balance -= amount;
 	}
 
-	//메서드 재정의 (Overriding)
+	//메서드 재정의 (Overriding) 
+	//부모 클래스의 메서드 선언은 반드시 같아야 하고, 구현만 다름
+	/* @Override 어노테이션 
+	 * - @Target(ElementType.METHOD) 메서드위에 선언하는 어노테이션
+	   - @Retention(RetentionPolicy.SOURCE) 컴파일타임에 동작하는 어노테이션
+	 */
 	@Override
 	public String toString() {
 		return "Account [고객번호 =" + custId + ", 계좌번호 =" + 

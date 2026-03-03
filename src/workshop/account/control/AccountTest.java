@@ -21,7 +21,11 @@ public class AccountTest {
 		account2.withdraw(10000);
 
 		//Account의 부모클래스인 Object 클래스의 toString() 메서드가 호출됨
-		System.out.println(account2.toString());
+		//workshop.account.entity.Account@2a139a55
+		
+		//Account의 toString() 메서드가 호출됨  
+		//Account [고객번호 =A1200, 계좌번호 =321-22-3477, 잔액 =5000]
+		System.out.println(account2);
 		
 		
 		

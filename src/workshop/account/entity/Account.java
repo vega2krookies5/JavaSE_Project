@@ -5,6 +5,11 @@ public class Account {
 	private String acctId;
 	private int balance;
 	
+	//Default Constructor 기본 생성자 
+	public Account() {
+		System.out.println(this.getClass().getName() + "기본생성자 호출됨");
+	}
+	
 	//setter method ( 멤버변수 값 변경 ) 
 //	public void setBalance(int balance) {
 //		this.balance = balance;

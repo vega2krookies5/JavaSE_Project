@@ -18,7 +18,7 @@ public class PersonManager {
 		
 		mgr.showPersons(persons);
 		
-		System.out.println(mgr.findByGender(persons, 'ø©'));
+		System.out.println(mgr.findByGender(persons, '≥≤'));
 		
 		mgr.showPerson(persons, "±Ë«œ¥√");
 	}

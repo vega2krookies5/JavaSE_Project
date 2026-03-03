@@ -9,5 +9,14 @@ public class PersonEntityTest {
 		persons[0] = new PersonEntity("이성호","7212121028102", "인천 계양구", "032-392-2932");
 		persons[1] = new PersonEntity("김하늘","7302132363217", "서울 강동구", "02-362-1932");
 		
+//		for (int i = 0; i < persons.length; i++) {
+//			
+//		}
+		
+		//Enhanced for Loop		
+		for (PersonEntity person : persons) {
+			System.out.println(person.getName() + " " + person.getGender());
+		}
+		
 	}
 }

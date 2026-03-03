@@ -4,7 +4,7 @@ import workshop.account.entity.Account;
 
 public class AccountTest {
 	public static void main(String[] args) {
-		//Account 按眉积己
+		//Account 按眉积己 ( Account狼 积己磊(constructor) 龋免 )
 		Account account = new Account();
 		//绊按锅龋 : A1100, 拌谅锅龋 : 221-22-3477, 儡咀 : 100000
 		account.setCustId("A1100");

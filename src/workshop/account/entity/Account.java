@@ -7,7 +7,14 @@ public class Account {
 	
 	//Default Constructor 기본 생성자 
 	public Account() {
-		System.out.println(this.getClass().getName() + "기본생성자 호출됨");
+		System.out.println(this.getClass().getName() + " 기본생성자 호출됨");
+	}
+	
+	//Constructor Overloading (중복 정의)
+	public Account(String custId, String acctId, int balance) {
+		setCustId(custId);
+		setAcctId(acctId);
+		this.balance = balance;
 	}
 	
 	//setter method ( 멤버변수 값 변경 ) 
@@ -18,6 +25,7 @@ public class Account {
 	public void setAcctId(String acctId) {
 		this.acctId = acctId;
 	}
+
 
 	public void setCustId(String custId) {
 		this.custId = custId;

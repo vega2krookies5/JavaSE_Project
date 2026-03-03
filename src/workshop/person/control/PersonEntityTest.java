@@ -10,11 +10,15 @@ public class PersonEntityTest {
 		
 		test.fillPersons(persons);
 				
+		test.printPersons(persons);
+		
+	}
+
+	public void printPersons(PersonEntity[] persons) {
 		//Enhanced for Loop		
 		for (PersonEntity person : persons) {
 			System.out.println(person.getName() + " " + person.getGender());
 		}
-		
 	}
 
 	public void fillPersons(PersonEntity[] persons) {

@@ -27,6 +27,8 @@ public class AccountTest {
 		//Account [°í°´¹øÈ£ =A1200, °èÁÂ¹øÈ£ =321-22-3477, ÀÜ¾× =5000]
 		System.out.println(account2);
 		
+		//ÀÜ¾×ºÎÁ·
+		account2.withdraw(10000);
 		
 		
 	}

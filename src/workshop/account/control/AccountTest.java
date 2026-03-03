@@ -15,6 +15,13 @@ public class AccountTest {
 		System.out.println("계좌번호 : " + account.getAcctId());
 		System.out.println("잔액 :" + account.getBalance());
 
+		//Overloaded 된 생성자 호출
+		Account account2 = new Account("A1200", "321-22-3477");
+		account2.deposit(15000);
+		account2.withdraw(10000);
+
+		//Account의 부모클래스인 Object 클래스의 toString() 메서드가 호출됨
+		System.out.println(account2.toString());
 		
 	}
 }

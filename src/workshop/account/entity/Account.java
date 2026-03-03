@@ -55,6 +55,14 @@ public class Account extends Object {
 		}
 		this.balance -= amount;
 	}
+
+	//메서드 재정의 (Overriding)
+	@Override
+	public String toString() {
+		return "Account [고객번호 =" + custId + ", 계좌번호 =" + 
+				acctId + ", 잔액 =" + balance + "]";
+	}
+	
 	
 	
 }

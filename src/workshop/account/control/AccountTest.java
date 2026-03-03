@@ -23,5 +23,7 @@ public class AccountTest {
 		//Account의 부모클래스인 Object 클래스의 toString() 메서드가 호출됨
 		System.out.println(account2.toString());
 		
+		
+		
 	}
 }

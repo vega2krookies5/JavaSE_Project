@@ -11,14 +11,13 @@ public class Account {
 	}
 	
 	//Constructor Overloading (중복 정의)
-	public Account(String custId, String acctId, int balance) {
+	public Account(String custId, String acctId) {
 		setCustId(custId);
 		setAcctId(acctId);
-		this.balance = balance;
 	}
 	
 	//setter method ( 멤버변수 값 변경 ) 
-//	public void setBalance(int balance) {
+//	private void setBalance(int balance) {
 //		this.balance = balance;
 //	}
 	

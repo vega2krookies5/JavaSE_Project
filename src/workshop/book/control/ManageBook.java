@@ -81,6 +81,11 @@ public class ManageBook {
 	
 	
 	//다형적 아규먼트(Polymorphic Argument)
+	/*
+	 * void modifyPrice(Magazine mag)
+	 * void modifyPrice(Novel nov)
+	 * void modifyPrice(ReferenceBook refBook)
+	 */
 	public static void modifyPrice(Publication pub) {
 		double rate = 0.0;
 		if(pub instanceof Magazine) {
